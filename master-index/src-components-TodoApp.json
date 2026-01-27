@@ -1,14 +1,17 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-01-19T06:08:06.997Z",
+  "generatedAt": "2026-01-27T10:18:57.526Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2026-01-27T10:18:57.526Z",
   "configuration": {
     "detectPlaceholders": true,
     "placeholderConfidence": 45,
     "placeholderAnalysisLevel": "enhanced",
     "detailLevel": "standard",
     "includeComplexity": false,
-    "maxFiles": 2000
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
   },
   "metadata": {
     "directory": {
@@ -26,10 +29,10 @@
         "lineCount": 88,
         "placeholderDetection": [
           {
-            "filePath": "/tmp/placeholder-detection-1768802884199-bcsjxrkw6/src/components/TodoApp/TodoApp.tsx",
+            "filePath": "/tmp/placeholder-detection-1769509134956-gl9gjle9x/src/components/TodoApp/TodoApp.tsx",
             "functionName": "TodoApp",
-            "classification": "likely-placeholder",
-            "confidence": 76,
+            "classification": "definite-placeholder",
+            "confidence": 100,
             "isPlaceholder": true,
             "reasons": [
               "Contains explicit placeholder marker: \"Todo\"",
@@ -50,6 +53,65 @@
               "unusedCodeAnalysis": 0,
               "externalUnusedChecks": 0,
               "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "TodoInput",
+                  "source": "../TodoInput/TodoInput",
+                  "line": 3,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "MINOR",
+                    "score": 4,
+                    "reason": "UI or helper import - might be preparatory or cleanup needed"
+                  }
+                },
+                {
+                  "name": "TodoFilters",
+                  "source": "../TodoFilters/TodoFilters",
+                  "line": 4,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TodoStats",
+                  "source": "../TodoStats/TodoStats",
+                  "line": 5,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TodoList",
+                  "source": "../TodoList/TodoList",
+                  "line": 6,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
             }
           }
         ],
@@ -131,6 +193,11 @@
         ]
       }
     ],
-    "subdirectories": []
-  }
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
 }

@@ -1,14 +1,17 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-01-19T06:08:07.238Z",
+  "generatedAt": "2026-01-27T10:18:57.775Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2026-01-27T10:18:57.775Z",
   "configuration": {
     "detectPlaceholders": true,
     "placeholderConfidence": 45,
     "placeholderAnalysisLevel": "enhanced",
     "detailLevel": "standard",
     "includeComplexity": false,
-    "maxFiles": 2000
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
   },
   "metadata": {
     "directory": {
@@ -26,10 +29,10 @@
         "lineCount": 45,
         "placeholderDetection": [
           {
-            "filePath": "/tmp/placeholder-detection-1768802884199-bcsjxrkw6/src/components/TodoList/TodoList.tsx",
+            "filePath": "/tmp/placeholder-detection-1769509134956-gl9gjle9x/src/components/TodoList/TodoList.tsx",
             "functionName": "TodoList",
-            "classification": "likely-placeholder",
-            "confidence": 60,
+            "classification": "definite-placeholder",
+            "confidence": 85,
             "isPlaceholder": true,
             "reasons": [
               "Contains explicit placeholder marker: \"Todo\"",
@@ -48,6 +51,26 @@
               "unusedCodeAnalysis": 0,
               "externalUnusedChecks": 0,
               "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "TodoItem",
+                  "source": "../TodoItem/TodoItem",
+                  "line": 2,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
             }
           }
         ],
@@ -101,6 +124,11 @@
         ]
       }
     ],
-    "subdirectories": []
-  }
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
 }

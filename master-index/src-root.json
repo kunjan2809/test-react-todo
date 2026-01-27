@@ -1,14 +1,17 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-01-19T06:08:07.442Z",
+  "generatedAt": "2026-01-27T10:18:57.988Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2026-01-27T10:18:57.988Z",
   "configuration": {
     "detectPlaceholders": true,
     "placeholderConfidence": 45,
     "placeholderAnalysisLevel": "enhanced",
     "detailLevel": "standard",
     "includeComplexity": false,
-    "maxFiles": 2000
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
   },
   "metadata": {
     "directory": {
@@ -77,7 +80,7 @@
         "lineCount": 9,
         "placeholderDetection": [
           {
-            "filePath": "/tmp/placeholder-detection-1768802884199-bcsjxrkw6/src/App.tsx",
+            "filePath": "/tmp/placeholder-detection-1769509134956-gl9gjle9x/src/App.tsx",
             "functionName": "App",
             "classification": "definite-placeholder",
             "confidence": 100,
@@ -101,6 +104,26 @@
               "unusedCodeAnalysis": 0,
               "externalUnusedChecks": 0,
               "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "TodoApp",
+                  "source": "./components/TodoApp/TodoApp",
+                  "line": 1,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "MINOR",
+                    "score": 4,
+                    "reason": "UI or helper import - might be preparatory or cleanup needed"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
             }
           }
         ],
@@ -167,6 +190,27 @@
         "sourcedPurposeFromChild": "Enhanced directory analysis of utils",
         "keyElementsFromChild": []
       }
-    ]
-  }
+    ],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "src/main.tsx",
+          "to": "react",
+          "type": "imports"
+        },
+        {
+          "from": "src/main.tsx",
+          "to": "react-dom/client",
+          "type": "imports"
+        },
+        {
+          "from": "src/main.tsx",
+          "to": "src/App.tsx",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
 }

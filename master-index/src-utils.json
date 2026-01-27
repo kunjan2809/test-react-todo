@@ -1,14 +1,17 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-01-19T06:08:07.409Z",
+  "generatedAt": "2026-01-27T10:18:57.947Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2026-01-27T10:18:57.947Z",
   "configuration": {
     "detectPlaceholders": true,
     "placeholderConfidence": 45,
     "placeholderAnalysisLevel": "enhanced",
     "detailLevel": "standard",
     "includeComplexity": false,
-    "maxFiles": 2000
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
   },
   "metadata": {
     "directory": {
@@ -26,10 +29,10 @@
         "lineCount": 47,
         "placeholderDetection": [
           {
-            "filePath": "/tmp/placeholder-detection-1768802884199-bcsjxrkw6/src/utils/todoUtils.ts",
+            "filePath": "/tmp/placeholder-detection-1769509134956-gl9gjle9x/src/utils/todoUtils.ts",
             "functionName": "calculateStats",
-            "classification": "likely-placeholder",
-            "confidence": 72,
+            "classification": "definite-placeholder",
+            "confidence": 100,
             "isPlaceholder": true,
             "reasons": [
               "Contains explicit placeholder marker: \"todo\"",
@@ -49,13 +52,59 @@
               "unusedCodeAnalysis": 0,
               "externalUnusedChecks": 0,
               "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Todo",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TodoFilter",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TodoStats",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
             }
           },
           {
-            "filePath": "/tmp/placeholder-detection-1768802884199-bcsjxrkw6/src/utils/todoUtils.ts",
+            "filePath": "/tmp/placeholder-detection-1769509134956-gl9gjle9x/src/utils/todoUtils.ts",
             "functionName": "filterTodos",
-            "classification": "likely-placeholder",
-            "confidence": 72,
+            "classification": "definite-placeholder",
+            "confidence": 100,
             "isPlaceholder": true,
             "reasons": [
               "Contains explicit placeholder marker: \"Todo\"",
@@ -75,10 +124,56 @@
               "unusedCodeAnalysis": 0,
               "externalUnusedChecks": 0,
               "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Todo",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TodoFilter",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TodoStats",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
             }
           },
           {
-            "filePath": "/tmp/placeholder-detection-1768802884199-bcsjxrkw6/src/utils/todoUtils.ts",
+            "filePath": "/tmp/placeholder-detection-1769509134956-gl9gjle9x/src/utils/todoUtils.ts",
             "functionName": "generateId",
             "classification": "definite-legitimate",
             "confidence": 0,
@@ -87,7 +182,7 @@
               "Low cyclomatic complexity (1)",
               "Very short function (3 lines)",
               "Function takes no parameters",
-              "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation; Returns computed value from external calls or processing",
+              "Legitimate simple function pattern (getter/setter/utility)",
               "Safety cap applied: cheap heuristics only"
             ],
             "location": {
@@ -99,17 +194,63 @@
               "namingPatterns": 0,
               "astAnalysis": 22,
               "commentAnalysis": 0,
-              "contextFilter": -67,
+              "contextFilter": -30,
               "unusedCodeAnalysis": 0,
               "externalUnusedChecks": 0,
               "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Todo",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TodoFilter",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TodoStats",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
             }
           },
           {
-            "filePath": "/tmp/placeholder-detection-1768802884199-bcsjxrkw6/src/utils/todoUtils.ts",
+            "filePath": "/tmp/placeholder-detection-1769509134956-gl9gjle9x/src/utils/todoUtils.ts",
             "functionName": "getUniqueCategories",
-            "classification": "uncertain",
-            "confidence": 48,
+            "classification": "definite-placeholder",
+            "confidence": 100,
             "isPlaceholder": true,
             "reasons": [
               "Contains explicit placeholder marker: \"todo\"",
@@ -130,13 +271,59 @@
               "unusedCodeAnalysis": 0,
               "externalUnusedChecks": 0,
               "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Todo",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TodoFilter",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TodoStats",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
             }
           },
           {
-            "filePath": "/tmp/placeholder-detection-1768802884199-bcsjxrkw6/src/utils/todoUtils.ts",
+            "filePath": "/tmp/placeholder-detection-1769509134956-gl9gjle9x/src/utils/todoUtils.ts",
             "functionName": "sortTodos",
-            "classification": "likely-placeholder",
-            "confidence": 60,
+            "classification": "definite-placeholder",
+            "confidence": 100,
             "isPlaceholder": true,
             "reasons": [
               "Contains explicit placeholder marker: \"Todo\"",
@@ -155,6 +342,52 @@
               "unusedCodeAnalysis": 0,
               "externalUnusedChecks": 0,
               "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Todo",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TodoFilter",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TodoStats",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
             }
           }
         ],
@@ -197,6 +430,11 @@
         "keyElementsInFile": []
       }
     ],
-    "subdirectories": []
-  }
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
 }
