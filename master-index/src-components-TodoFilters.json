@@ -1,9 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-01-27T10:18:57.617Z",
+  "generatedAt": "2026-01-29T03:30:33.679Z",
   "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
-  "_TRACE_TIMESTAMP": "2026-01-27T10:18:57.617Z",
+  "_TRACE_TIMESTAMP": "2026-01-29T03:30:33.679Z",
   "configuration": {
     "detectPlaceholders": true,
     "placeholderConfidence": 45,
@@ -29,7 +29,7 @@
         "lineCount": 115,
         "placeholderDetection": [
           {
-            "filePath": "/tmp/placeholder-detection-1769509134956-gl9gjle9x/src/components/TodoFilters/TodoFilters.tsx",
+            "filePath": "/tmp/placeholder-detection-1769657430937-2m88mlxhz/src/components/TodoFilters/TodoFilters.tsx",
             "functionName": "handleCategoryChange",
             "classification": "definite-legitimate",
             "confidence": 0,
@@ -76,7 +76,7 @@
             }
           },
           {
-            "filePath": "/tmp/placeholder-detection-1769509134956-gl9gjle9x/src/components/TodoFilters/TodoFilters.tsx",
+            "filePath": "/tmp/placeholder-detection-1769657430937-2m88mlxhz/src/components/TodoFilters/TodoFilters.tsx",
             "functionName": "handlePriorityChange",
             "classification": "definite-legitimate",
             "confidence": 0,
@@ -123,7 +123,7 @@
             }
           },
           {
-            "filePath": "/tmp/placeholder-detection-1769509134956-gl9gjle9x/src/components/TodoFilters/TodoFilters.tsx",
+            "filePath": "/tmp/placeholder-detection-1769657430937-2m88mlxhz/src/components/TodoFilters/TodoFilters.tsx",
             "functionName": "handleStatusChange",
             "classification": "definite-legitimate",
             "confidence": 0,
@@ -170,7 +170,7 @@
             }
           },
           {
-            "filePath": "/tmp/placeholder-detection-1769509134956-gl9gjle9x/src/components/TodoFilters/TodoFilters.tsx",
+            "filePath": "/tmp/placeholder-detection-1769657430937-2m88mlxhz/src/components/TodoFilters/TodoFilters.tsx",
             "functionName": "TodoFilters",
             "classification": "definite-placeholder",
             "confidence": 100,
