@@ -1,9 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-01-29T03:30:34.109Z",
+  "generatedAt": "2026-02-02T09:43:12.918Z",
   "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
-  "_TRACE_TIMESTAMP": "2026-01-29T03:30:34.109Z",
+  "_TRACE_TIMESTAMP": "2026-02-02T09:43:12.918Z",
   "configuration": {
     "detectPlaceholders": true,
     "placeholderConfidence": 45,
@@ -80,7 +80,7 @@
         "lineCount": 9,
         "placeholderDetection": [
           {
-            "filePath": "/tmp/placeholder-detection-1769657430937-2m88mlxhz/src/App.tsx",
+            "filePath": "/tmp/placeholder-detection-1770025389974-q6xt8rg0p/src/App.tsx",
             "functionName": "App",
             "classification": "definite-placeholder",
             "confidence": 100,

@@ -1,9 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-01-29T03:30:33.724Z",
+  "generatedAt": "2026-02-02T09:43:12.484Z",
   "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
-  "_TRACE_TIMESTAMP": "2026-01-29T03:30:33.724Z",
+  "_TRACE_TIMESTAMP": "2026-02-02T09:43:12.484Z",
   "configuration": {
     "detectPlaceholders": true,
     "placeholderConfidence": 45,
@@ -29,7 +29,7 @@
         "lineCount": 56,
         "placeholderDetection": [
           {
-            "filePath": "/tmp/placeholder-detection-1769657430937-2m88mlxhz/src/components/TodoInput/TodoInput.tsx",
+            "filePath": "/tmp/placeholder-detection-1770025389974-q6xt8rg0p/src/components/TodoInput/TodoInput.tsx",
             "functionName": "handleSubmit",
             "classification": "definite-placeholder",
             "confidence": 85,
@@ -87,7 +87,7 @@
             }
           },
           {
-            "filePath": "/tmp/placeholder-detection-1769657430937-2m88mlxhz/src/components/TodoInput/TodoInput.tsx",
+            "filePath": "/tmp/placeholder-detection-1770025389974-q6xt8rg0p/src/components/TodoInput/TodoInput.tsx",
             "functionName": "TodoInput",
             "classification": "definite-placeholder",
             "confidence": 100,
