@@ -1,9 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-02-02T09:43:12.879Z",
+  "generatedAt": "2026-02-02T09:43:17.399Z",
   "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
-  "_TRACE_TIMESTAMP": "2026-02-02T09:43:12.879Z",
+  "_TRACE_TIMESTAMP": "2026-02-02T09:43:17.399Z",
   "configuration": {
     "detectPlaceholders": true,
     "placeholderConfidence": 45,
@@ -29,7 +29,7 @@
         "lineCount": 47,
         "placeholderDetection": [
           {
-            "filePath": "/tmp/placeholder-detection-1770025389974-q6xt8rg0p/src/utils/todoUtils.ts",
+            "filePath": "/tmp/placeholder-detection-1770025394608-zg4mc9005/src/utils/todoUtils.ts",
             "functionName": "calculateStats",
             "classification": "definite-placeholder",
             "confidence": 100,
@@ -101,7 +101,7 @@
             }
           },
           {
-            "filePath": "/tmp/placeholder-detection-1770025389974-q6xt8rg0p/src/utils/todoUtils.ts",
+            "filePath": "/tmp/placeholder-detection-1770025394608-zg4mc9005/src/utils/todoUtils.ts",
             "functionName": "filterTodos",
             "classification": "definite-placeholder",
             "confidence": 100,
@@ -173,7 +173,7 @@
             }
           },
           {
-            "filePath": "/tmp/placeholder-detection-1770025389974-q6xt8rg0p/src/utils/todoUtils.ts",
+            "filePath": "/tmp/placeholder-detection-1770025394608-zg4mc9005/src/utils/todoUtils.ts",
             "functionName": "generateId",
             "classification": "definite-legitimate",
             "confidence": 0,
@@ -247,7 +247,7 @@
             }
           },
           {
-            "filePath": "/tmp/placeholder-detection-1770025389974-q6xt8rg0p/src/utils/todoUtils.ts",
+            "filePath": "/tmp/placeholder-detection-1770025394608-zg4mc9005/src/utils/todoUtils.ts",
             "functionName": "getUniqueCategories",
             "classification": "definite-placeholder",
             "confidence": 100,
@@ -320,7 +320,7 @@
             }
           },
           {
-            "filePath": "/tmp/placeholder-detection-1770025389974-q6xt8rg0p/src/utils/todoUtils.ts",
+            "filePath": "/tmp/placeholder-detection-1770025394608-zg4mc9005/src/utils/todoUtils.ts",
             "functionName": "sortTodos",
             "classification": "definite-placeholder",
             "confidence": 100,
