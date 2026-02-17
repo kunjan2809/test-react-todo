@@ -1,12 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-02-17T09:30:04.338Z",
+  "generatedAt": "2026-02-17T09:30:06.957Z",
   "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
-  "_TRACE_TIMESTAMP": "2026-02-17T09:30:04.338Z",
+  "_TRACE_TIMESTAMP": "2026-02-17T09:30:06.957Z",
   "configuration": {
-    "detectPlaceholders": true,
-    "placeholderConfidence": 45,
+    "detectPlaceholders": false,
+    "placeholderConfidence": 40,
     "placeholderAnalysisLevel": "enhanced",
     "detailLevel": "standard",
     "includeComplexity": false,
@@ -27,94 +27,6 @@
         "filePurpose": "TypeScript 5.4 implementation file",
         "languageDetail": "TypeScript 5.4",
         "lineCount": 88,
-        "placeholderDetection": [
-          {
-            "filePath": "/workspace/src/components/TodoApp/TodoApp.tsx",
-            "functionName": "TodoApp",
-            "classification": "definite-placeholder",
-            "confidence": 100,
-            "isPlaceholder": true,
-            "reasons": [
-              "Contains explicit placeholder marker: \"Todo\"",
-              "Low cyclomatic complexity (1)",
-              "Function takes no parameters",
-              "High context score suggests legitimate implementation"
-            ],
-            "location": {
-              "startLine": 1,
-              "endLine": 1
-            },
-            "detectionMethods": {
-              "explicitMarkers": 85,
-              "namingPatterns": 0,
-              "astAnalysis": 16,
-              "commentAnalysis": 0,
-              "contextFilter": -25,
-              "unusedCodeAnalysis": 0,
-              "externalUnusedChecks": 0,
-              "enhancedContext": 0
-            },
-            "unusedCode": {
-              "unusedImports": [
-                {
-                  "name": "TodoInput",
-                  "source": "../TodoInput/TodoInput",
-                  "line": 3,
-                  "isDefault": false,
-                  "isAISuspicious": false,
-                  "likelyPlaceholder": false,
-                  "priority": {
-                    "level": "MINOR",
-                    "score": 4,
-                    "reason": "UI or helper import - might be preparatory or cleanup needed"
-                  }
-                },
-                {
-                  "name": "TodoFilters",
-                  "source": "../TodoFilters/TodoFilters",
-                  "line": 4,
-                  "isDefault": false,
-                  "isAISuspicious": false,
-                  "likelyPlaceholder": false,
-                  "priority": {
-                    "level": "TRIVIAL",
-                    "score": 2,
-                    "reason": "General import - low priority for implementation"
-                  }
-                },
-                {
-                  "name": "TodoStats",
-                  "source": "../TodoStats/TodoStats",
-                  "line": 5,
-                  "isDefault": false,
-                  "isAISuspicious": false,
-                  "likelyPlaceholder": false,
-                  "priority": {
-                    "level": "TRIVIAL",
-                    "score": 2,
-                    "reason": "General import - low priority for implementation"
-                  }
-                },
-                {
-                  "name": "TodoList",
-                  "source": "../TodoList/TodoList",
-                  "line": 6,
-                  "isDefault": false,
-                  "isAISuspicious": false,
-                  "likelyPlaceholder": false,
-                  "priority": {
-                    "level": "TRIVIAL",
-                    "score": 2,
-                    "reason": "General import - low priority for implementation"
-                  }
-                }
-              ],
-              "unusedVariables": [],
-              "unusedMethods": [],
-              "unusedParameters": []
-            }
-          }
-        ],
         "importedModules": [
           {
             "name": "useTodos",
