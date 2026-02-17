@@ -1,9 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-02-02T10:01:34.623Z",
+  "generatedAt": "2026-02-17T09:20:32.972Z",
   "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
-  "_TRACE_TIMESTAMP": "2026-02-02T10:01:34.623Z",
+  "_TRACE_TIMESTAMP": "2026-02-17T09:20:32.972Z",
   "configuration": {
     "detectPlaceholders": true,
     "placeholderConfidence": 45,
@@ -29,7 +29,7 @@
         "lineCount": 69,
         "placeholderDetection": [
           {
-            "filePath": "/tmp/placeholder-detection-1770026491330-ym1u1el8p/src/components/TodoStats/TodoStats.tsx",
+            "filePath": "/workspace/src/components/TodoStats/TodoStats.tsx",
             "functionName": "TodoStats",
             "classification": "definite-placeholder",
             "confidence": 100,

@@ -1,9 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-02-02T10:01:34.561Z",
+  "generatedAt": "2026-02-17T09:20:32.794Z",
   "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
-  "_TRACE_TIMESTAMP": "2026-02-02T10:01:34.561Z",
+  "_TRACE_TIMESTAMP": "2026-02-17T09:20:32.794Z",
   "configuration": {
     "detectPlaceholders": true,
     "placeholderConfidence": 45,
@@ -29,7 +29,7 @@
         "lineCount": 137,
         "placeholderDetection": [
           {
-            "filePath": "/tmp/placeholder-detection-1770026491330-ym1u1el8p/src/components/TodoItem/TodoItem.tsx",
+            "filePath": "/workspace/src/components/TodoItem/TodoItem.tsx",
             "functionName": "getPriorityColor",
             "classification": "definite-legitimate",
             "confidence": 0,
@@ -87,7 +87,7 @@
             }
           },
           {
-            "filePath": "/tmp/placeholder-detection-1770026491330-ym1u1el8p/src/components/TodoItem/TodoItem.tsx",
+            "filePath": "/workspace/src/components/TodoItem/TodoItem.tsx",
             "functionName": "handleCancel",
             "classification": "definite-placeholder",
             "confidence": 100,
@@ -147,7 +147,7 @@
             }
           },
           {
-            "filePath": "/tmp/placeholder-detection-1770026491330-ym1u1el8p/src/components/TodoItem/TodoItem.tsx",
+            "filePath": "/workspace/src/components/TodoItem/TodoItem.tsx",
             "functionName": "handleKeyPress",
             "classification": "definite-legitimate",
             "confidence": 0,
@@ -205,7 +205,7 @@
             }
           },
           {
-            "filePath": "/tmp/placeholder-detection-1770026491330-ym1u1el8p/src/components/TodoItem/TodoItem.tsx",
+            "filePath": "/workspace/src/components/TodoItem/TodoItem.tsx",
             "functionName": "handleSave",
             "classification": "definite-placeholder",
             "confidence": 89,
@@ -264,7 +264,7 @@
             }
           },
           {
-            "filePath": "/tmp/placeholder-detection-1770026491330-ym1u1el8p/src/components/TodoItem/TodoItem.tsx",
+            "filePath": "/workspace/src/components/TodoItem/TodoItem.tsx",
             "functionName": "TodoItem",
             "classification": "definite-placeholder",
             "confidence": 100,

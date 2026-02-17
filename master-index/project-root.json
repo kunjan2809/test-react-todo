@@ -10,7 +10,7 @@
       "company": "Deduplicode Services, Inc.",
       "website": "https://deduplicode.ai"
     },
-    "generatedAt": "2026-02-02T10:01:35.027Z",
+    "generatedAt": "2026-02-17T09:20:33.748Z",
     "support": {
       "email": "support@deduplicode.ai",
       "contact": "Contact: keith@deduplicode.ai | Support: support@deduplicode.ai"
@@ -20,9 +20,9 @@
   "version": "2.1.0",
   "metadata": {
     "directory": {
-      "name": "placeholder-detection-1770026491330-ym1u1el8p",
+      "name": "workspace",
       "path": ".",
-      "purpose": "Enhanced directory analysis of placeholder-detection-1770026491330-ym1u1el8p",
+      "purpose": "Enhanced directory analysis of workspace",
       "ownKeyElements": []
     },
     "files": [
