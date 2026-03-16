@@ -1,17 +1,14 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-02-17T09:45:06.152Z",
-  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
-  "_TRACE_TIMESTAMP": "2026-02-17T09:45:06.152Z",
+  "generatedAt": "2026-03-16T12:19:45.647Z",
   "configuration": {
     "detectPlaceholders": true,
     "placeholderConfidence": 45,
     "placeholderAnalysisLevel": "enhanced",
     "detailLevel": "standard",
     "includeComplexity": false,
-    "maxFiles": 2000,
-    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+    "maxFiles": 2000
   },
   "metadata": {
     "directory": {
@@ -24,7 +21,8 @@
       {
         "name": "index.ts",
         "path": "types/index.ts",
-        "filePurpose": "TypeScript 5.4 implementation file",
+        "filePath": "types/index.ts",
+        "filePurpose": "Provides Todo, TodoFilter, TodoStats (3 exports)",
         "languageDetail": "TypeScript 5.4",
         "lineCount": 1,
         "importedModules": [],
@@ -49,7 +47,8 @@
       {
         "name": "Todo.ts",
         "path": "types/Todo.ts",
-        "filePurpose": "TypeScript 5.4 implementation file",
+        "filePath": "types/Todo.ts",
+        "filePurpose": "Provides Todo, TodoFilter, TodoStats (3 exports)",
         "languageDetail": "TypeScript 5.4",
         "lineCount": 20,
         "importedModules": [],

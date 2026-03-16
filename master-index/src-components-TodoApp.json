@@ -1,17 +1,14 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-02-17T09:45:05.142Z",
-  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
-  "_TRACE_TIMESTAMP": "2026-02-17T09:45:05.142Z",
+  "generatedAt": "2026-03-16T12:19:44.712Z",
   "configuration": {
     "detectPlaceholders": true,
     "placeholderConfidence": 45,
     "placeholderAnalysisLevel": "enhanced",
     "detailLevel": "standard",
     "includeComplexity": false,
-    "maxFiles": 2000,
-    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+    "maxFiles": 2000
   },
   "metadata": {
     "directory": {
@@ -24,7 +21,8 @@
       {
         "name": "TodoApp.tsx",
         "path": "src/components/TodoApp/TodoApp.tsx",
-        "filePurpose": "TypeScript 5.4 implementation file",
+        "filePath": "src/components/TodoApp/TodoApp.tsx",
+        "filePurpose": "Exports const TodoApp for use by other modules",
         "languageDetail": "TypeScript 5.4",
         "lineCount": 88,
         "placeholderDetection": [
@@ -35,7 +33,7 @@
             "confidence": 100,
             "isPlaceholder": true,
             "reasons": [
-              "Contains explicit placeholder marker: \"Todo\"",
+              "Contains explicit placeholder marker",
               "Low cyclomatic complexity (1)",
               "Function takes no parameters",
               "High context score suggests legitimate implementation"
@@ -47,13 +45,24 @@
             "detectionMethods": {
               "explicitMarkers": 85,
               "namingPatterns": 0,
-              "astAnalysis": 16,
+              "astAnalysis": 28,
               "commentAnalysis": 0,
               "contextFilter": -25,
               "unusedCodeAnalysis": 0,
               "externalUnusedChecks": 0,
               "enhancedContext": 0
             },
+            "reasonSignals": [
+              {
+                "ruleId": "explicit-todo-fixme",
+                "score": 85,
+                "message": "Contains explicit placeholder marker",
+                "axis": "intent",
+                "tags": [
+                  "todo"
+                ]
+              }
+            ],
             "unusedCode": {
               "unusedImports": [
                 {
@@ -113,6 +122,26 @@
               "unusedMethods": [],
               "unusedParameters": []
             }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/workspace/src/components/TodoApp/TodoApp.tsx",
+            "line": 1,
+            "endLine": 1,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 100,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "High context score suggests legitimate implementation"
+            ],
+            "functionName": "TodoApp",
+            "ruleId": "explicit-todo-fixme",
+            "id": "_workspace_src_components_TodoApp_TodoApp_tsx:function:1:0"
           }
         ],
         "importedModules": [
@@ -177,12 +206,25 @@
             "type": "const"
           }
         ],
-        "functions": [],
+        "functions": [
+          {
+            "name": "TodoApp",
+            "signature": "const TodoApp = () =>",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "useTodos",
+              "calculateStats",
+              "getUniqueCategories"
+            ]
+          }
+        ],
         "classes": [],
         "keyElementsInFile": [
           {
             "name": "TodoApp",
-            "type": "function",
+            "type": "arrow",
             "signature": "const TodoApp = () =>"
           },
           {

@@ -1,17 +1,14 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-02-17T09:45:05.774Z",
-  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
-  "_TRACE_TIMESTAMP": "2026-02-17T09:45:05.774Z",
+  "generatedAt": "2026-03-16T12:19:45.150Z",
   "configuration": {
     "detectPlaceholders": true,
     "placeholderConfidence": 45,
     "placeholderAnalysisLevel": "enhanced",
     "detailLevel": "standard",
     "includeComplexity": false,
-    "maxFiles": 2000,
-    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+    "maxFiles": 2000
   },
   "metadata": {
     "directory": {
@@ -24,7 +21,8 @@
       {
         "name": "TodoStats.tsx",
         "path": "src/components/TodoStats/TodoStats.tsx",
-        "filePurpose": "TypeScript 5.4 implementation file",
+        "filePath": "src/components/TodoStats/TodoStats.tsx",
+        "filePurpose": "Exports const TodoStats for use by other modules",
         "languageDetail": "TypeScript 5.4",
         "lineCount": 69,
         "placeholderDetection": [
@@ -35,7 +33,7 @@
             "confidence": 100,
             "isPlaceholder": true,
             "reasons": [
-              "Contains explicit placeholder marker: \"Todo\"",
+              "Contains explicit placeholder marker",
               "High context score suggests legitimate implementation"
             ],
             "location": {
@@ -52,6 +50,17 @@
               "externalUnusedChecks": 0,
               "enhancedContext": 0
             },
+            "reasonSignals": [
+              {
+                "ruleId": "explicit-todo-fixme",
+                "score": 85,
+                "message": "Contains explicit placeholder marker",
+                "axis": "intent",
+                "tags": [
+                  "todo"
+                ]
+              }
+            ],
             "unusedCode": {
               "unusedImports": [
                 {
@@ -72,6 +81,24 @@
               "unusedMethods": [],
               "unusedParameters": []
             }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/workspace/src/components/TodoStats/TodoStats.tsx",
+            "line": 1,
+            "endLine": 1,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 100,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "High context score suggests legitimate implementation"
+            ],
+            "functionName": "TodoStats",
+            "ruleId": "explicit-todo-fixme",
+            "id": "_workspace_src_components_TodoStats_TodoStats_tsx:function:1:0"
           }
         ],
         "importedModules": [
@@ -95,12 +122,23 @@
             "type": "const"
           }
         ],
-        "functions": [],
+        "functions": [
+          {
+            "name": "TodoStats",
+            "signature": "const TodoStats = () =>",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "Math.round"
+            ]
+          }
+        ],
         "classes": [],
         "keyElementsInFile": [
           {
             "name": "TodoStats",
-            "type": "function",
+            "type": "arrow",
             "signature": "const TodoStats = () =>"
           },
           {

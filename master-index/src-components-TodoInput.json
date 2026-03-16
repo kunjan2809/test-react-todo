@@ -1,17 +1,14 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-02-17T09:45:05.417Z",
-  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
-  "_TRACE_TIMESTAMP": "2026-02-17T09:45:05.417Z",
+  "generatedAt": "2026-03-16T12:19:44.894Z",
   "configuration": {
     "detectPlaceholders": true,
     "placeholderConfidence": 45,
     "placeholderAnalysisLevel": "enhanced",
     "detailLevel": "standard",
     "includeComplexity": false,
-    "maxFiles": 2000,
-    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+    "maxFiles": 2000
   },
   "metadata": {
     "directory": {
@@ -24,26 +21,27 @@
       {
         "name": "TodoInput.tsx",
         "path": "src/components/TodoInput/TodoInput.tsx",
-        "filePurpose": "TypeScript 5.4 implementation file",
+        "filePath": "src/components/TodoInput/TodoInput.tsx",
+        "filePurpose": "Exports const TodoInput for use by other modules",
         "languageDetail": "TypeScript 5.4",
         "lineCount": 56,
         "placeholderDetection": [
           {
             "filePath": "/workspace/src/components/TodoInput/TodoInput.tsx",
             "functionName": "handleSubmit",
-            "classification": "definite-placeholder",
-            "confidence": 85,
-            "isPlaceholder": true,
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
             "reasons": [
-              "Contains explicit placeholder marker: \"Todo\"",
-              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function"
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
             ],
             "location": {
               "startLine": 1,
               "endLine": 1
             },
             "detectionMethods": {
-              "explicitMarkers": 85,
+              "explicitMarkers": 0,
               "namingPatterns": 0,
               "astAnalysis": 0,
               "commentAnalysis": 0,
@@ -93,7 +91,8 @@
             "confidence": 100,
             "isPlaceholder": true,
             "reasons": [
-              "Contains explicit placeholder marker: \"Todo\"",
+              "Contains explicit placeholder marker",
+              "Contains placeholder/stub/mock/dummy marker",
               "High context score suggests legitimate implementation"
             ],
             "location": {
@@ -101,7 +100,7 @@
               "endLine": 1
             },
             "detectionMethods": {
-              "explicitMarkers": 85,
+              "explicitMarkers": 100,
               "namingPatterns": 0,
               "astAnalysis": 0,
               "commentAnalysis": 0,
@@ -110,6 +109,26 @@
               "externalUnusedChecks": 0,
               "enhancedContext": 0
             },
+            "reasonSignals": [
+              {
+                "ruleId": "explicit-todo-fixme",
+                "score": 85,
+                "message": "Contains explicit placeholder marker",
+                "axis": "intent",
+                "tags": [
+                  "todo"
+                ]
+              },
+              {
+                "ruleId": "explicit-placeholder-stub-mock",
+                "score": 50,
+                "message": "Contains placeholder/stub/mock/dummy marker",
+                "axis": "intent",
+                "tags": [
+                  "intent"
+                ]
+              }
+            ],
             "unusedCode": {
               "unusedImports": [
                 {
@@ -145,6 +164,40 @@
             }
           }
         ],
+        "findings": [
+          {
+            "filePath": "/workspace/src/components/TodoInput/TodoInput.tsx",
+            "line": 1,
+            "endLine": 1,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "handleSubmit",
+            "id": "_workspace_src_components_TodoInput_TodoInput_tsx:function:1:0"
+          },
+          {
+            "filePath": "/workspace/src/components/TodoInput/TodoInput.tsx",
+            "line": 1,
+            "endLine": 1,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 100,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "Contains placeholder/stub/mock/dummy marker",
+              "High context score suggests legitimate implementation"
+            ],
+            "functionName": "TodoInput",
+            "ruleId": "explicit-todo-fixme",
+            "id": "_workspace_src_components_TodoInput_TodoInput_tsx:function:1:1"
+          }
+        ],
         "importedModules": [
           {
             "name": "useState",
@@ -167,17 +220,42 @@
             "type": "const"
           }
         ],
-        "functions": [],
+        "functions": [
+          {
+            "name": "TodoInput",
+            "signature": "const TodoInput = () =>",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "useState",
+              "e.preventDefault",
+              "text.trim",
+              "onAddTodo",
+              "setText",
+              "setCategory",
+              "setPriority"
+            ]
+          },
+          {
+            "name": "handleSubmit",
+            "signature": "const handleSubmit = () =>",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": []
+          }
+        ],
         "classes": [],
         "keyElementsInFile": [
           {
             "name": "TodoInput",
-            "type": "function",
+            "type": "arrow",
             "signature": "const TodoInput = () =>"
           },
           {
             "name": "handleSubmit",
-            "type": "function",
+            "type": "arrow",
             "signature": "const handleSubmit = () =>"
           },
           {

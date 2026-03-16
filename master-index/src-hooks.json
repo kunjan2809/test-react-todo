@@ -1,17 +1,14 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-02-17T09:45:05.923Z",
-  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
-  "_TRACE_TIMESTAMP": "2026-02-17T09:45:05.923Z",
+  "generatedAt": "2026-03-16T12:19:45.281Z",
   "configuration": {
     "detectPlaceholders": true,
     "placeholderConfidence": 45,
     "placeholderAnalysisLevel": "enhanced",
     "detailLevel": "standard",
     "includeComplexity": false,
-    "maxFiles": 2000,
-    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+    "maxFiles": 2000
   },
   "metadata": {
     "directory": {
@@ -24,7 +21,8 @@
       {
         "name": "useTodos.ts",
         "path": "src/hooks/useTodos.ts",
-        "filePurpose": "TypeScript 5.4 implementation file",
+        "filePath": "src/hooks/useTodos.ts",
+        "filePurpose": "Exports const useTodos for use by other modules",
         "languageDetail": "TypeScript 5.4",
         "lineCount": 91,
         "placeholderDetection": [
@@ -35,7 +33,7 @@
             "confidence": 70,
             "isPlaceholder": true,
             "reasons": [
-              "Contains explicit placeholder marker: \"Todo\"",
+              "Contains explicit placeholder marker",
               "Function takes no parameters",
               "[FALLBACK] 1 AI-suspicious unused variables: allCompleted",
               "Note: Using custom analysis - TS/ESLint would be more accurate",
@@ -55,6 +53,17 @@
               "externalUnusedChecks": 0,
               "enhancedContext": 0
             },
+            "reasonSignals": [
+              {
+                "ruleId": "explicit-todo-fixme",
+                "score": 85,
+                "message": "Contains explicit placeholder marker",
+                "axis": "intent",
+                "tags": [
+                  "todo"
+                ]
+              }
+            ],
             "unusedCode": {
               "unusedImports": [
                 {
@@ -181,6 +190,27 @@
             }
           }
         ],
+        "findings": [
+          {
+            "filePath": "/workspace/src/hooks/useTodos.ts",
+            "line": 1,
+            "endLine": 1,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 70,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "Function takes no parameters",
+              "[FALLBACK] 1 AI-suspicious unused variables: allCompleted",
+              "Note: Using custom analysis - TS/ESLint would be more accurate",
+              "High context score suggests legitimate implementation"
+            ],
+            "functionName": "useTodos",
+            "ruleId": "explicit-todo-fixme",
+            "id": "_workspace_src_hooks_useTodos_ts:function:1:0"
+          }
+        ],
         "importedModules": [
           {
             "name": "useState",
@@ -218,12 +248,40 @@
             "type": "const"
           }
         ],
-        "functions": [],
+        "functions": [
+          {
+            "name": "useTodos",
+            "signature": "const useTodos = () =>",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "useState",
+              "useEffect",
+              "localStorage.getItem",
+              "map",
+              "JSON.parse",
+              "setTodos",
+              "console.error",
+              "localStorage.setItem",
+              "JSON.stringify",
+              "useCallback",
+              "generateId",
+              "text.trim",
+              "category.trim",
+              "prev.map",
+              "prev.filter",
+              "todos.every",
+              "sortTodos",
+              "filterTodos"
+            ]
+          }
+        ],
         "classes": [],
         "keyElementsInFile": [
           {
             "name": "useTodos",
-            "type": "function",
+            "type": "arrow",
             "signature": "const useTodos = () =>"
           },
           {

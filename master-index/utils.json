@@ -1,17 +1,14 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-02-17T09:45:06.197Z",
-  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
-  "_TRACE_TIMESTAMP": "2026-02-17T09:45:06.197Z",
+  "generatedAt": "2026-03-16T12:19:45.724Z",
   "configuration": {
     "detectPlaceholders": true,
     "placeholderConfidence": 45,
     "placeholderAnalysisLevel": "enhanced",
     "detailLevel": "standard",
     "includeComplexity": false,
-    "maxFiles": 2000,
-    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+    "maxFiles": 2000
   },
   "metadata": {
     "directory": {
@@ -24,7 +21,8 @@
       {
         "name": "todoUtils.ts",
         "path": "utils/todoUtils.ts",
-        "filePurpose": "TypeScript 5.4 implementation file",
+        "filePath": "utils/todoUtils.ts",
+        "filePurpose": "Provides generateId, filterTodos, sortTodos, calculateStats… (5 exports)",
         "languageDetail": "TypeScript 5.4",
         "lineCount": 48,
         "placeholderDetection": [
@@ -35,7 +33,7 @@
             "confidence": 100,
             "isPlaceholder": true,
             "reasons": [
-              "Contains explicit placeholder marker: \"todo\"",
+              "Contains explicit placeholder marker",
               "Low cyclomatic complexity (1)",
               "High context score suggests legitimate implementation"
             ],
@@ -46,13 +44,24 @@
             "detectionMethods": {
               "explicitMarkers": 85,
               "namingPatterns": 0,
-              "astAnalysis": 12,
+              "astAnalysis": 24,
               "commentAnalysis": 0,
               "contextFilter": -25,
               "unusedCodeAnalysis": 0,
               "externalUnusedChecks": 0,
               "enhancedContext": 0
             },
+            "reasonSignals": [
+              {
+                "ruleId": "explicit-todo-fixme",
+                "score": 85,
+                "message": "Contains explicit placeholder marker",
+                "axis": "intent",
+                "tags": [
+                  "todo"
+                ]
+              }
+            ],
             "unusedCode": {
               "unusedImports": [
                 {
@@ -107,7 +116,7 @@
             "confidence": 100,
             "isPlaceholder": true,
             "reasons": [
-              "Contains explicit placeholder marker: \"Todo\"",
+              "Contains explicit placeholder marker",
               "Low cyclomatic complexity (1)",
               "High context score suggests legitimate implementation"
             ],
@@ -118,13 +127,24 @@
             "detectionMethods": {
               "explicitMarkers": 85,
               "namingPatterns": 0,
-              "astAnalysis": 12,
+              "astAnalysis": 24,
               "commentAnalysis": 0,
               "contextFilter": -25,
               "unusedCodeAnalysis": 0,
               "externalUnusedChecks": 0,
               "enhancedContext": 0
             },
+            "reasonSignals": [
+              {
+                "ruleId": "explicit-todo-fixme",
+                "score": 85,
+                "message": "Contains explicit placeholder marker",
+                "axis": "intent",
+                "tags": [
+                  "todo"
+                ]
+              }
+            ],
             "unusedCode": {
               "unusedImports": [
                 {
@@ -176,7 +196,7 @@
             "filePath": "/workspace/utils/todoUtils.ts",
             "functionName": "generateId",
             "classification": "definite-legitimate",
-            "confidence": 0,
+            "confidence": 4,
             "isPlaceholder": false,
             "reasons": [
               "Low cyclomatic complexity (1)",
@@ -192,7 +212,7 @@
             "detectionMethods": {
               "explicitMarkers": 0,
               "namingPatterns": 0,
-              "astAnalysis": 22,
+              "astAnalysis": 34,
               "commentAnalysis": 0,
               "contextFilter": -30,
               "unusedCodeAnalysis": 0,
@@ -253,7 +273,7 @@
             "confidence": 100,
             "isPlaceholder": true,
             "reasons": [
-              "Contains explicit placeholder marker: \"todo\"",
+              "Contains explicit placeholder marker",
               "Low cyclomatic complexity (1)",
               "Very short function (4 lines)",
               "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation"
@@ -265,13 +285,24 @@
             "detectionMethods": {
               "explicitMarkers": 85,
               "namingPatterns": 0,
-              "astAnalysis": 18,
+              "astAnalysis": 30,
               "commentAnalysis": 0,
               "contextFilter": -55,
               "unusedCodeAnalysis": 0,
               "externalUnusedChecks": 0,
               "enhancedContext": 0
             },
+            "reasonSignals": [
+              {
+                "ruleId": "explicit-todo-fixme",
+                "score": 85,
+                "message": "Contains explicit placeholder marker",
+                "axis": "intent",
+                "tags": [
+                  "todo"
+                ]
+              }
+            ],
             "unusedCode": {
               "unusedImports": [
                 {
@@ -326,7 +357,7 @@
             "confidence": 100,
             "isPlaceholder": true,
             "reasons": [
-              "Contains explicit placeholder marker: \"Todo\"",
+              "Contains explicit placeholder marker",
               "High context score suggests legitimate implementation"
             ],
             "location": {
@@ -343,6 +374,17 @@
               "externalUnusedChecks": 0,
               "enhancedContext": 0
             },
+            "reasonSignals": [
+              {
+                "ruleId": "explicit-todo-fixme",
+                "score": 85,
+                "message": "Contains explicit placeholder marker",
+                "axis": "intent",
+                "tags": [
+                  "todo"
+                ]
+              }
+            ],
             "unusedCode": {
               "unusedImports": [
                 {
@@ -391,6 +433,94 @@
             }
           }
         ],
+        "findings": [
+          {
+            "filePath": "/workspace/utils/todoUtils.ts",
+            "line": 1,
+            "endLine": 1,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 100,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "Low cyclomatic complexity (1)",
+              "High context score suggests legitimate implementation"
+            ],
+            "functionName": "calculateStats",
+            "ruleId": "explicit-todo-fixme",
+            "id": "_workspace_utils_todoUtils_ts:function:1:0"
+          },
+          {
+            "filePath": "/workspace/utils/todoUtils.ts",
+            "line": 1,
+            "endLine": 1,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 100,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "Low cyclomatic complexity (1)",
+              "High context score suggests legitimate implementation"
+            ],
+            "functionName": "filterTodos",
+            "ruleId": "explicit-todo-fixme",
+            "id": "_workspace_utils_todoUtils_ts:function:1:1"
+          },
+          {
+            "filePath": "/workspace/utils/todoUtils.ts",
+            "line": 1,
+            "endLine": 1,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 4,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "generateId",
+            "id": "_workspace_utils_todoUtils_ts:function:1:2"
+          },
+          {
+            "filePath": "/workspace/utils/todoUtils.ts",
+            "line": 1,
+            "endLine": 1,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 100,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation"
+            ],
+            "functionName": "getUniqueCategories",
+            "ruleId": "explicit-todo-fixme",
+            "id": "_workspace_utils_todoUtils_ts:function:1:3"
+          },
+          {
+            "filePath": "/workspace/utils/todoUtils.ts",
+            "line": 1,
+            "endLine": 1,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 100,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "High context score suggests legitimate implementation"
+            ],
+            "functionName": "sortTodos",
+            "ruleId": "explicit-todo-fixme",
+            "id": "_workspace_utils_todoUtils_ts:function:1:4"
+          }
+        ],
         "importedModules": [
           {
             "name": "Todo",
@@ -425,9 +555,94 @@
             "type": "const"
           }
         ],
-        "functions": [],
+        "functions": [
+          {
+            "name": "generateId",
+            "signature": "const generateId = () =>",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "toString",
+              "Date.now",
+              "substr",
+              "Math.random"
+            ]
+          },
+          {
+            "name": "filterTodos",
+            "signature": "const filterTodos = () =>",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "todos.filter"
+            ]
+          },
+          {
+            "name": "sortTodos",
+            "signature": "const sortTodos = () =>",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "sortedTodos.sort",
+              "b.createdAt.getTime",
+              "a.createdAt.getTime",
+              "a.text.localeCompare"
+            ]
+          },
+          {
+            "name": "calculateStats",
+            "signature": "const calculateStats = () =>",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "todos.filter"
+            ]
+          },
+          {
+            "name": "getUniqueCategories",
+            "signature": "const getUniqueCategories = () =>",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "todos.map",
+              "Array.from",
+              "categories.filter"
+            ]
+          }
+        ],
         "classes": [],
-        "keyElementsInFile": []
+        "keyElementsInFile": [
+          {
+            "name": "generateId",
+            "type": "arrow",
+            "signature": "const generateId = () =>"
+          },
+          {
+            "name": "filterTodos",
+            "type": "arrow",
+            "signature": "const filterTodos = () =>"
+          },
+          {
+            "name": "sortTodos",
+            "type": "arrow",
+            "signature": "const sortTodos = () =>"
+          },
+          {
+            "name": "calculateStats",
+            "type": "arrow",
+            "signature": "const calculateStats = () =>"
+          },
+          {
+            "name": "getUniqueCategories",
+            "type": "arrow",
+            "signature": "const getUniqueCategories = () =>"
+          }
+        ]
       }
     ],
     "subdirectories": [],
