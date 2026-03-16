@@ -1,10 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-03-16T12:19:47.422Z",
+  "generatedAt": "2026-03-16T12:19:55.683Z",
   "configuration": {
-    "detectPlaceholders": false,
-    "placeholderConfidence": 40,
+    "detectPlaceholders": true,
+    "placeholderConfidence": 45,
     "placeholderAnalysisLevel": "enhanced",
     "detailLevel": "standard",
     "includeComplexity": false,
@@ -25,6 +25,179 @@
         "filePurpose": "Exports const TodoInput for use by other modules",
         "languageDetail": "TypeScript 5.4",
         "lineCount": 56,
+        "placeholderDetection": [
+          {
+            "filePath": "/workspace/src/components/TodoInput/TodoInput.tsx",
+            "functionName": "handleSubmit",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "useState",
+                  "source": "react",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "MINOR",
+                    "score": 4,
+                    "reason": "UI or helper import - might be preparatory or cleanup needed"
+                  }
+                },
+                {
+                  "name": "FormEvent",
+                  "source": "react",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "MINOR",
+                    "score": 4,
+                    "reason": "UI or helper import - might be preparatory or cleanup needed"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          },
+          {
+            "filePath": "/workspace/src/components/TodoInput/TodoInput.tsx",
+            "functionName": "TodoInput",
+            "classification": "definite-placeholder",
+            "confidence": 100,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "Contains placeholder/stub/mock/dummy marker",
+              "High context score suggests legitimate implementation"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 100,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -25,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "reasonSignals": [
+              {
+                "ruleId": "explicit-todo-fixme",
+                "score": 85,
+                "message": "Contains explicit placeholder marker",
+                "axis": "intent",
+                "tags": [
+                  "todo"
+                ]
+              },
+              {
+                "ruleId": "explicit-placeholder-stub-mock",
+                "score": 50,
+                "message": "Contains placeholder/stub/mock/dummy marker",
+                "axis": "intent",
+                "tags": [
+                  "intent"
+                ]
+              }
+            ],
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "useState",
+                  "source": "react",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "MINOR",
+                    "score": 4,
+                    "reason": "UI or helper import - might be preparatory or cleanup needed"
+                  }
+                },
+                {
+                  "name": "FormEvent",
+                  "source": "react",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "MINOR",
+                    "score": 4,
+                    "reason": "UI or helper import - might be preparatory or cleanup needed"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/workspace/src/components/TodoInput/TodoInput.tsx",
+            "line": 1,
+            "endLine": 1,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "handleSubmit",
+            "id": "_workspace_src_components_TodoInput_TodoInput_tsx:function:1:0"
+          },
+          {
+            "filePath": "/workspace/src/components/TodoInput/TodoInput.tsx",
+            "line": 1,
+            "endLine": 1,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 100,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "Contains placeholder/stub/mock/dummy marker",
+              "High context score suggests legitimate implementation"
+            ],
+            "functionName": "TodoInput",
+            "ruleId": "explicit-todo-fixme",
+            "id": "_workspace_src_components_TodoInput_TodoInput_tsx:function:1:1"
+          }
+        ],
         "importedModules": [
           {
             "name": "useState",

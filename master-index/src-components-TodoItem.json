@@ -1,10 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-03-16T12:19:47.519Z",
+  "generatedAt": "2026-03-16T12:19:55.807Z",
   "configuration": {
-    "detectPlaceholders": false,
-    "placeholderConfidence": 40,
+    "detectPlaceholders": true,
+    "placeholderConfidence": 45,
     "placeholderAnalysisLevel": "enhanced",
     "detailLevel": "standard",
     "includeComplexity": false,
@@ -25,6 +25,443 @@
         "filePurpose": "Exports const TodoItem for use by other modules",
         "languageDetail": "TypeScript 5.4",
         "lineCount": 137,
+        "placeholderDetection": [
+          {
+            "filePath": "/workspace/src/components/TodoItem/TodoItem.tsx",
+            "functionName": "getPriorityColor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "useState",
+                  "source": "react",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "MINOR",
+                    "score": 4,
+                    "reason": "UI or helper import - might be preparatory or cleanup needed"
+                  }
+                },
+                {
+                  "name": "Todo",
+                  "source": "../../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          },
+          {
+            "filePath": "/workspace/src/components/TodoItem/TodoItem.tsx",
+            "functionName": "handleCancel",
+            "classification": "definite-placeholder",
+            "confidence": 100,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility)"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 85,
+              "namingPatterns": 0,
+              "astAnalysis": 28,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "reasonSignals": [
+              {
+                "ruleId": "explicit-todo-fixme",
+                "score": 85,
+                "message": "Contains explicit placeholder marker",
+                "axis": "intent",
+                "tags": [
+                  "todo"
+                ]
+              }
+            ],
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "useState",
+                  "source": "react",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "MINOR",
+                    "score": 4,
+                    "reason": "UI or helper import - might be preparatory or cleanup needed"
+                  }
+                },
+                {
+                  "name": "Todo",
+                  "source": "../../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          },
+          {
+            "filePath": "/workspace/src/components/TodoItem/TodoItem.tsx",
+            "functionName": "handleKeyPress",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "useState",
+                  "source": "react",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "MINOR",
+                    "score": 4,
+                    "reason": "UI or helper import - might be preparatory or cleanup needed"
+                  }
+                },
+                {
+                  "name": "Todo",
+                  "source": "../../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          },
+          {
+            "filePath": "/workspace/src/components/TodoItem/TodoItem.tsx",
+            "functionName": "handleSave",
+            "classification": "definite-placeholder",
+            "confidence": 89,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility)"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 85,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "reasonSignals": [
+              {
+                "ruleId": "explicit-todo-fixme",
+                "score": 85,
+                "message": "Contains explicit placeholder marker",
+                "axis": "intent",
+                "tags": [
+                  "todo"
+                ]
+              }
+            ],
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "useState",
+                  "source": "react",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "MINOR",
+                    "score": 4,
+                    "reason": "UI or helper import - might be preparatory or cleanup needed"
+                  }
+                },
+                {
+                  "name": "Todo",
+                  "source": "../../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          },
+          {
+            "filePath": "/workspace/src/components/TodoItem/TodoItem.tsx",
+            "functionName": "TodoItem",
+            "classification": "definite-placeholder",
+            "confidence": 100,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "Contains placeholder/stub/mock/dummy marker",
+              "High context score suggests legitimate implementation"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 100,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -25,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "reasonSignals": [
+              {
+                "ruleId": "explicit-todo-fixme",
+                "score": 85,
+                "message": "Contains explicit placeholder marker",
+                "axis": "intent",
+                "tags": [
+                  "todo"
+                ]
+              },
+              {
+                "ruleId": "explicit-placeholder-stub-mock",
+                "score": 50,
+                "message": "Contains placeholder/stub/mock/dummy marker",
+                "axis": "intent",
+                "tags": [
+                  "intent"
+                ]
+              }
+            ],
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "useState",
+                  "source": "react",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "MINOR",
+                    "score": 4,
+                    "reason": "UI or helper import - might be preparatory or cleanup needed"
+                  }
+                },
+                {
+                  "name": "Todo",
+                  "source": "../../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/workspace/src/components/TodoItem/TodoItem.tsx",
+            "line": 1,
+            "endLine": 1,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "getPriorityColor",
+            "id": "_workspace_src_components_TodoItem_TodoItem_tsx:function:1:0"
+          },
+          {
+            "filePath": "/workspace/src/components/TodoItem/TodoItem.tsx",
+            "line": 1,
+            "endLine": 1,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 100,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility)"
+            ],
+            "functionName": "handleCancel",
+            "ruleId": "explicit-todo-fixme",
+            "id": "_workspace_src_components_TodoItem_TodoItem_tsx:function:1:1"
+          },
+          {
+            "filePath": "/workspace/src/components/TodoItem/TodoItem.tsx",
+            "line": 1,
+            "endLine": 1,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "handleKeyPress",
+            "id": "_workspace_src_components_TodoItem_TodoItem_tsx:function:1:2"
+          },
+          {
+            "filePath": "/workspace/src/components/TodoItem/TodoItem.tsx",
+            "line": 1,
+            "endLine": 1,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 89,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility)"
+            ],
+            "functionName": "handleSave",
+            "ruleId": "explicit-todo-fixme",
+            "id": "_workspace_src_components_TodoItem_TodoItem_tsx:function:1:3"
+          },
+          {
+            "filePath": "/workspace/src/components/TodoItem/TodoItem.tsx",
+            "line": 1,
+            "endLine": 1,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 100,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "Contains placeholder/stub/mock/dummy marker",
+              "High context score suggests legitimate implementation"
+            ],
+            "functionName": "TodoItem",
+            "ruleId": "explicit-todo-fixme",
+            "id": "_workspace_src_components_TodoItem_TodoItem_tsx:function:1:4"
+          },
+          {
+            "filePath": "/workspace/src/components/TodoItem/TodoItem.tsx",
+            "line": 110,
+            "kind": "comment",
+            "type": "explicit_marker",
+            "confidence": 80,
+            "isPlaceholder": true,
+            "subType": "template_token",
+            "snippet": "{{ color: getPriorityColor(todo.priority) }}",
+            "ruleId": "Rule1",
+            "reasons": [
+              "Comment/token placeholder: template_token ({{ color: getPriorityColor(todo.priority) }})"
+            ],
+            "id": "_workspace_src_components_TodoItem_TodoItem_tsx:comment:110:5"
+          }
+        ],
         "importedModules": [
           {
             "name": "useState",

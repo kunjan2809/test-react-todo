@@ -1,10 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-03-16T12:19:48.112Z",
+  "generatedAt": "2026-03-16T12:19:56.332Z",
   "configuration": {
-    "detectPlaceholders": false,
-    "placeholderConfidence": 40,
+    "detectPlaceholders": true,
+    "placeholderConfidence": 45,
     "placeholderAnalysisLevel": "enhanced",
     "detailLevel": "standard",
     "includeComplexity": false,
@@ -25,6 +25,502 @@
         "filePurpose": "Provides generateId, filterTodos, sortTodos, calculateStats… (5 exports)",
         "languageDetail": "TypeScript 5.4",
         "lineCount": 48,
+        "placeholderDetection": [
+          {
+            "filePath": "/workspace/utils/todoUtils.ts",
+            "functionName": "calculateStats",
+            "classification": "definite-placeholder",
+            "confidence": 100,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "Low cyclomatic complexity (1)",
+              "High context score suggests legitimate implementation"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 85,
+              "namingPatterns": 0,
+              "astAnalysis": 24,
+              "commentAnalysis": 0,
+              "contextFilter": -25,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "reasonSignals": [
+              {
+                "ruleId": "explicit-todo-fixme",
+                "score": 85,
+                "message": "Contains explicit placeholder marker",
+                "axis": "intent",
+                "tags": [
+                  "todo"
+                ]
+              }
+            ],
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Todo",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TodoFilter",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TodoStats",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          },
+          {
+            "filePath": "/workspace/utils/todoUtils.ts",
+            "functionName": "filterTodos",
+            "classification": "definite-placeholder",
+            "confidence": 100,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "Low cyclomatic complexity (1)",
+              "High context score suggests legitimate implementation"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 85,
+              "namingPatterns": 0,
+              "astAnalysis": 24,
+              "commentAnalysis": 0,
+              "contextFilter": -25,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "reasonSignals": [
+              {
+                "ruleId": "explicit-todo-fixme",
+                "score": 85,
+                "message": "Contains explicit placeholder marker",
+                "axis": "intent",
+                "tags": [
+                  "todo"
+                ]
+              }
+            ],
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Todo",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TodoFilter",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TodoStats",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          },
+          {
+            "filePath": "/workspace/utils/todoUtils.ts",
+            "functionName": "generateId",
+            "classification": "definite-legitimate",
+            "confidence": 4,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 34,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Todo",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TodoFilter",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TodoStats",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          },
+          {
+            "filePath": "/workspace/utils/todoUtils.ts",
+            "functionName": "getUniqueCategories",
+            "classification": "definite-placeholder",
+            "confidence": 100,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 85,
+              "namingPatterns": 0,
+              "astAnalysis": 30,
+              "commentAnalysis": 0,
+              "contextFilter": -55,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "reasonSignals": [
+              {
+                "ruleId": "explicit-todo-fixme",
+                "score": 85,
+                "message": "Contains explicit placeholder marker",
+                "axis": "intent",
+                "tags": [
+                  "todo"
+                ]
+              }
+            ],
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Todo",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TodoFilter",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TodoStats",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          },
+          {
+            "filePath": "/workspace/utils/todoUtils.ts",
+            "functionName": "sortTodos",
+            "classification": "definite-placeholder",
+            "confidence": 100,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "High context score suggests legitimate implementation"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 85,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -25,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "reasonSignals": [
+              {
+                "ruleId": "explicit-todo-fixme",
+                "score": 85,
+                "message": "Contains explicit placeholder marker",
+                "axis": "intent",
+                "tags": [
+                  "todo"
+                ]
+              }
+            ],
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Todo",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TodoFilter",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TodoStats",
+                  "source": "../types",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/workspace/utils/todoUtils.ts",
+            "line": 1,
+            "endLine": 1,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 100,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "Low cyclomatic complexity (1)",
+              "High context score suggests legitimate implementation"
+            ],
+            "functionName": "calculateStats",
+            "ruleId": "explicit-todo-fixme",
+            "id": "_workspace_utils_todoUtils_ts:function:1:0"
+          },
+          {
+            "filePath": "/workspace/utils/todoUtils.ts",
+            "line": 1,
+            "endLine": 1,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 100,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "Low cyclomatic complexity (1)",
+              "High context score suggests legitimate implementation"
+            ],
+            "functionName": "filterTodos",
+            "ruleId": "explicit-todo-fixme",
+            "id": "_workspace_utils_todoUtils_ts:function:1:1"
+          },
+          {
+            "filePath": "/workspace/utils/todoUtils.ts",
+            "line": 1,
+            "endLine": 1,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 4,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "generateId",
+            "id": "_workspace_utils_todoUtils_ts:function:1:2"
+          },
+          {
+            "filePath": "/workspace/utils/todoUtils.ts",
+            "line": 1,
+            "endLine": 1,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 100,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation"
+            ],
+            "functionName": "getUniqueCategories",
+            "ruleId": "explicit-todo-fixme",
+            "id": "_workspace_utils_todoUtils_ts:function:1:3"
+          },
+          {
+            "filePath": "/workspace/utils/todoUtils.ts",
+            "line": 1,
+            "endLine": 1,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 100,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker",
+              "High context score suggests legitimate implementation"
+            ],
+            "functionName": "sortTodos",
+            "ruleId": "explicit-todo-fixme",
+            "id": "_workspace_utils_todoUtils_ts:function:1:4"
+          }
+        ],
         "importedModules": [
           {
             "name": "Todo",
