@@ -1,10 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-03-16T12:19:45.075Z",
+  "generatedAt": "2026-03-16T12:19:47.602Z",
   "configuration": {
-    "detectPlaceholders": true,
-    "placeholderConfidence": 45,
+    "detectPlaceholders": false,
+    "placeholderConfidence": 40,
     "placeholderAnalysisLevel": "enhanced",
     "detailLevel": "standard",
     "includeComplexity": false,
@@ -25,82 +25,6 @@
         "filePurpose": "Exports const TodoList for use by other modules",
         "languageDetail": "TypeScript 5.4",
         "lineCount": 45,
-        "placeholderDetection": [
-          {
-            "filePath": "/workspace/src/components/TodoList/TodoList.tsx",
-            "functionName": "TodoList",
-            "classification": "definite-placeholder",
-            "confidence": 85,
-            "isPlaceholder": true,
-            "reasons": [
-              "Contains explicit placeholder marker",
-              "High context score suggests legitimate implementation"
-            ],
-            "location": {
-              "startLine": 1,
-              "endLine": 1
-            },
-            "detectionMethods": {
-              "explicitMarkers": 85,
-              "namingPatterns": 0,
-              "astAnalysis": 0,
-              "commentAnalysis": 0,
-              "contextFilter": -25,
-              "unusedCodeAnalysis": 0,
-              "externalUnusedChecks": 0,
-              "enhancedContext": 0
-            },
-            "reasonSignals": [
-              {
-                "ruleId": "explicit-todo-fixme",
-                "score": 85,
-                "message": "Contains explicit placeholder marker",
-                "axis": "intent",
-                "tags": [
-                  "todo"
-                ]
-              }
-            ],
-            "unusedCode": {
-              "unusedImports": [
-                {
-                  "name": "TodoItem",
-                  "source": "../TodoItem/TodoItem",
-                  "line": 2,
-                  "isDefault": false,
-                  "isAISuspicious": false,
-                  "likelyPlaceholder": false,
-                  "priority": {
-                    "level": "TRIVIAL",
-                    "score": 2,
-                    "reason": "General import - low priority for implementation"
-                  }
-                }
-              ],
-              "unusedVariables": [],
-              "unusedMethods": [],
-              "unusedParameters": []
-            }
-          }
-        ],
-        "findings": [
-          {
-            "filePath": "/workspace/src/components/TodoList/TodoList.tsx",
-            "line": 1,
-            "endLine": 1,
-            "kind": "function",
-            "type": "explicit_marker",
-            "confidence": 85,
-            "isPlaceholder": true,
-            "reasons": [
-              "Contains explicit placeholder marker",
-              "High context score suggests legitimate implementation"
-            ],
-            "functionName": "TodoList",
-            "ruleId": "explicit-todo-fixme",
-            "id": "_workspace_src_components_TodoList_TodoList_tsx:function:1:0"
-          }
-        ],
         "importedModules": [
           {
             "name": "Todo",

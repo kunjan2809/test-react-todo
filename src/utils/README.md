@@ -9,7 +9,7 @@ Enhanced directory analysis of utils
 **📊 Directory Statistics:**
 - **Files:** 1 TypeScript 5.4 files
 - **Languages:** TypeScript 5.4
-- **Last Updated:** 2/17/2026
+- **Last Updated:** 3/16/2026
 
 ## 🗂 Directory Structure
 
@@ -27,6 +27,13 @@ utils/
 
 **Code Elements:**
 
+#### ⚙️ Functions (5)
+- **`generateId()`** - const generateId = () =>
+- **`filterTodos()`** - const filterTodos = () =>
+- **`sortTodos()`** - const sortTodos = () =>
+- **`calculateStats()`** - const calculateStats = () =>
+- **`getUniqueCategories()`** - const getUniqueCategories = () =>
+
 #### 📥 Imports (1)
 - `Todo`
 
@@ -37,7 +44,26 @@ utils/
 - `calculateStats`
 - `getUniqueCategories`
 
+#### 💻 Usage Example
+```ts
+// Import and use functions
+const { generateId } = require('./todoUtils.ts');
+const result = generateId();
+console.log(result);
+```
+
 ---
+
+## 📚 API Reference Summary
+
+### Functions
+| Function | File | Description |
+|----------|------|-------------|
+| `generateId()` | `src/utils/todoUtils.ts` | generateId function implementation |
+| `filterTodos()` | `src/utils/todoUtils.ts` | filterTodos function implementation |
+| `sortTodos()` | `src/utils/todoUtils.ts` | sortTodos function implementation |
+| `calculateStats()` | `src/utils/todoUtils.ts` | calculateStats function implementation |
+| `getUniqueCategories()` | `src/utils/todoUtils.ts` | getUniqueCategories function implementation |
 
 ---
 
