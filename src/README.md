@@ -9,7 +9,7 @@ Enhanced directory analysis of src
 **📊 Directory Statistics:**
 - **Files:** 3 TypeScript 5.4 files
 - **Languages:** TypeScript 5.4
-- **Last Updated:** 3/16/2026
+- **Last Updated:** 3/23/2026
 
 ## 🗂 Directory Structure
 
@@ -20,36 +20,12 @@ src/
 ├── 📁 hooks/
 ├── 📁 types/
 ├── 📁 utils/
-├── 📄 src/vite-env.d.ts (2 lines)
+├── 📄 src/App.tsx (9 lines)
 ├── 📄 src/main.tsx (11 lines)
-└── 📄 src/App.tsx (9 lines)
+└── 📄 src/vite-env.d.ts (2 lines)
 ```
 
 ## 🎯 Files in this Directory
-
-### 📄 `src/vite-env.d.ts`
-**File Information:**
-- **Language:** TypeScript 5.4
-- **Lines of Code:** 2
-
-**Code Elements:**
-
----
-
-### 📄 `src/main.tsx`
-**File Information:**
-- **Language:** TypeScript 5.4
-- **Lines of Code:** 11
-
-**Code Elements:**
-
-#### 📥 Imports (4)
-- `StrictMode`
-- `createRoot`
-- `./index.css`
-- `App`
-
----
 
 ### 📄 `src/App.tsx`
 **File Information:**
@@ -76,6 +52,30 @@ const { App } = require('./App.tsx');
 const result = App();
 console.log(result);
 ```
+
+---
+
+### 📄 `src/main.tsx`
+**File Information:**
+- **Language:** TypeScript 5.4
+- **Lines of Code:** 11
+
+**Code Elements:**
+
+#### 📥 Imports (4)
+- `StrictMode`
+- `createRoot`
+- `./index.css`
+- `App`
+
+---
+
+### 📄 `src/vite-env.d.ts`
+**File Information:**
+- **Language:** TypeScript 5.4
+- **Lines of Code:** 2
+
+**Code Elements:**
 
 ---
 
